@@ -7,7 +7,11 @@ array = [8, 5, 2, 9, 5, 6, 3]
 Sample Output
 [2, 3, 5, 5, 6, 8, 9]
  */
-
+/*
+1. Compare each element with its neighbor to the right.
+2. Put the largest element at the very end for each time.
+3. Continue as above until you have no unsorted elements on the left.
+*/
 public class BubbleSort {
     // Best: Time O(N) | Space O(1)
     // Average: Time O(N^2) | Space O(1)
