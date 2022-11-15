@@ -46,7 +46,7 @@ Constraints:
 0 <= nums[i] <= 50
 0 <= val <= 100
 */
-// Two pointer Time O(N^2) | Space O(1)
+// Two pointer Time O(N) | Space O(1)
 public class LC27RemoveElement {
     public int removeElement(int[] nums, int val) {
         int slow = 0, fast = 0;

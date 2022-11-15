@@ -15,7 +15,7 @@ Constraints:
 1 <= nums.length <= 104
 -231 <= nums[i] <= 231 - 1
 */
-// Two pointer Time O(N^2) | Space O(1)
+// Two pointer Time O(N) | Space O(1)
 public class LC283MoveZeroes {
     public void moveZeroes(int[] nums) {
         int zeroIdx = removeElement(nums, 0);

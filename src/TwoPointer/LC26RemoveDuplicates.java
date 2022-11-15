@@ -51,7 +51,7 @@ nums is sorted in non-decreasing order.
 
 // Two pointer
 public class LC26RemoveDuplicates {
-    // Time O(N^2) | Space O(1)
+    // Time O(N) | Space O(1)
     public int removeDuplicates(int[] nums) {
         int slow = 0, fast = 0;
         while (fast < nums.length) {
