@@ -20,7 +20,7 @@ The list is guaranteed to be sorted in ascending order.
 
 //Two pointer Time O(N) since only have 2 pointers, and both pointers will traverse the array at most once. Space O(1)
 public class LC83RemoveDuplicatesFromSortedList {
-    public class ListNode {
+    public static class ListNode {
         int val;
         ListNode next;
         ListNode(){}
