@@ -1,5 +1,6 @@
-package LinkedList;
-import LinkedList.LC83RemoveDuplicatesFromSortedList.*;
+package LinkedList.LC83RemoveDuplicatesFromSortedList;
+import LinkedList.LC83RemoveDuplicatesFromSortedList.LC83RemoveDuplicatesFromSortedList;
+import LinkedList.LC83RemoveDuplicatesFromSortedList.LC83RemoveDuplicatesFromSortedList.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
