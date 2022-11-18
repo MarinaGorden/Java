@@ -1,5 +1,7 @@
 package LinkedList.FindLinkedListLoop;
 
+import LinkedList.LinkedList;
+
 import java.util.HashSet;
 import java.util.Set;
 
@@ -19,11 +21,4 @@ public class FindLinkedListLoop {
         return head;
     }
 
-    public static class LinkedList {
-        int value;
-        LinkedList next;
-        public LinkedList (int value) {
-            this.value = value;
-        }
-    }
 }
