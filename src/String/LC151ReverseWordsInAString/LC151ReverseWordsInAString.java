@@ -1,4 +1,4 @@
-package String.Lc151ReverseWordsInAString;
+package String.LC151ReverseWordsInAString;
 /*
 Given an input string s, reverse the order of the words.
 A word is defined as a sequence of non-space characters. The words in s will be separated by at least one space.
@@ -26,7 +26,7 @@ Constraints:
 s contains English letters (upper-case and lower-case), digits, and spaces ' '.
 There is at least one word in s.
 */
-public class ReverseWordsInAString {
+public class LC151ReverseWordsInAString {
     // Two pointer Time O(N) Space O(1)
     public String reverseWords(String s) {
         s = s.trim();
