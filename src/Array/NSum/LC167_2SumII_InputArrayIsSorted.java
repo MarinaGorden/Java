@@ -30,7 +30,7 @@ numbers is sorted in non-decreasing order.
 The tests are generated such that there is exactly one solution.
 */
 // Given a 1-indexed array
-public class LC167TwoSumII_InputArrayIsSorted {
+public class LC167_2SumII_InputArrayIsSorted {
     // Two pointer Time O(N) | Space O(1)
     public int[] twoSum(int[] numbers, int target) {
         int l = 0, r = numbers.length - 1;

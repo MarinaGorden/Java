@@ -35,7 +35,7 @@ Constraints:
 -105 <= nums[i] <= 105
 */
 // Two pointer
-public class LC153Sum {
+public class LC15_3Sum {
     public List<List<Integer>> threeSum(int[] nums) {
         Arrays.sort(nums);
         List<List<Integer>> res = new ArrayList<>();

@@ -27,7 +27,7 @@ Constraints:
 Only one valid answer exists.
 */
 // HashMap TIme O(N) | Space <= O(N)
-public class LC1TwoSum {
+public class LC1_2Sum {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> seen = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
