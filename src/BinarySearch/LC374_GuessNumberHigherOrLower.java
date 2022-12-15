@@ -1,4 +1,7 @@
 package BinarySearch;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 /*
 We are playing the Guess Game. The game is as follows:
 I pick a number from 1 to n. You have to guess which number I picked.
@@ -8,7 +11,23 @@ You call a pre-defined API int guess(int num), which returns three possible resu
 1: Your guess is lower than the number I picked (i.e. num < pick).
 0: your guess is equal to the number I picked (i.e. num == pick).
 Return the number that I picked.
+Example 1:
+Input: n = 10, pick = 6
+Output: 6
+
+Example 2:
+Input: n = 1, pick = 1
+Output: 1
+
+Example 3:
+Input: n = 2, pick = 1
+Output: 1
+
+Constraints:
+1 <= n <= 231 - 1
+1 <= pick <= n
 */
+// Binary Search Time O(log2N) | Space O(1)
 public class LC374_GuessNumberHigherOrLower {
     static int pick;
     static int num;
@@ -48,7 +67,11 @@ public class LC374_GuessNumberHigherOrLower {
     }
 
     public static void main(String[] args){
-        LC374_GuessNumberHigherOrLower guessNum = new LC374_GuessNumberHigherOrLower(10, 6);
-        System.out.println(guessNumber(10));
+        LC374_GuessNumberHigherOrLower case1 = new LC374_GuessNumberHigherOrLower(10, 6);
+        assertEquals(case1.guessNumber(10), 6);
+        LC374_GuessNumberHigherOrLower case2 = new LC374_GuessNumberHigherOrLower(1, 1);
+        assertEquals(case2.guessNumber(1), 1);
+        LC374_GuessNumberHigherOrLower case3 = new LC374_GuessNumberHigherOrLower(2, 1);
+        assertEquals(case3.guessNumber(1), 1);
     }
 }
