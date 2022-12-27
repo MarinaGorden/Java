@@ -21,8 +21,7 @@ public class LC278_FirstBadVersion {
         return left;
     }
     public boolean isBadVersion (int n) {
-        if (n >= version) return true;
-        else return false;
+        return n >= version;
     }
 
     public static void main(String[] args) {
