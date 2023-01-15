@@ -52,16 +52,18 @@ public class RandomizedSet {
     public boolean insert(int val) {
         if (valToIndex.containsKey(val)) return false;
         data.add(val);
+        // record the index of val
         valToIndex.put(val, data.size() - 1);
         return true;
     }
 
     public boolean remove(int val) {
         if (!valToIndex.containsKey(val)) return false;
+        // get the original index of val
         int index = valToIndex.get(val);
         int lastData = data.get(data.size() - 1);
-        // move the last element to the place idx of the element to delete, because it's hashset we don't need to
-        // consider the order
+        // swap the last element with the val to remove
+// move the last element to the place idx of the element to delete, because it's hashset no need to consider the order
         data.set(index, lastData);
         data.remove(data.size() - 1);
         valToIndex.put(lastData, index);
