@@ -54,7 +54,7 @@ public class LC496_NextGreaterElementI {
         int [] res = new int[len];
         Stack<Integer> stack = new Stack<>();
         // stack is first-in-last-out, so all elements should be stored reversely
-        for (int i = len - 1; i >= 0; i++) {
+        for (int i = len - 1; i >= 0; i--) {
             stack.push(nums[i]);
             // judge the elements if the tail isn't the biggest, pop
             while(!stack.isEmpty() && nums[i] >= stack.peek()) {
