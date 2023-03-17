@@ -4,6 +4,7 @@ import LinkedList.ListNode;
 
 public class LC24_SwapNodesInPairs2 {
     public ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) return head;
         ListNode dummyHead = new ListNode(-1);
         dummyHead.next = head;
         ListNode prev = dummyHead;
