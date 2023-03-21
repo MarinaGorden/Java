@@ -49,7 +49,7 @@ public class BFSWithHashMap {
                 min = Integer.min(min, column);
                 max = Integer.max(max, column);
                 queue.offer(new Pair(root.left, column - 1));
-                queue.offer(new Pair<>(root.right, column + 1));
+                queue.offer(new Pair(root.right, column + 1));
             }
             for(int i = min; i <= max; ++i) {
                 res.add(columnMap.get(i));
